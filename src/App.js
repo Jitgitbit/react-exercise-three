@@ -1,4 +1,5 @@
 import React from 'react';
+import Todos from './components/Todos';
 
 class App extends React.Component {
   state = {
@@ -10,7 +11,8 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        root component
+        <h1 className='center blue-text'>Todo's</h1>
+        <Todos todos={this.state.todos}/>
       </div>
     );
   }  
