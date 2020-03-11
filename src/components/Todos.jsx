@@ -10,7 +10,7 @@ export default function Todos({todos, deleteTodo}) {
       )
     })
   ) : (
-    <p className='center'>You have no todo's left, Yay !</p>
+    <h1 className='center green-text'>You have no todo's left, Yay !</h1>
   )
   return (
     <div className='todos collection'>
