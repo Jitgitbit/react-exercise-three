@@ -19,7 +19,13 @@ class App extends React.Component {
       todos: todosMinusOne
     })
   }
-  addTodo = (todo) => {}
+  addTodo = (todo) => {
+    todo.id = Math.random();
+    let newTodos = [...this.state.todos, todo]
+    this.setState({
+      todos: newTodos
+    })
+  }
   render(){
     return (
       <div className="todo-app container">
