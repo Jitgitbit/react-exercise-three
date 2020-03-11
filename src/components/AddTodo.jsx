@@ -12,6 +12,7 @@ export default class AddTodo extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state)
+    this.props.addTodo(this.state)
   }
   render() {
     return (
