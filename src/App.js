@@ -10,6 +10,12 @@ class App extends React.Component {
   }
   deleteTodo = (id) => {
     console.log(id)
+    const todosMinusOne = this.state.todos.filter(todo => {
+      return todo.id !== id;
+    })
+    this.setState({
+      todos: todosMinusOne
+    })
   }
   render(){
     return (
